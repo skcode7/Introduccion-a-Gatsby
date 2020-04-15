@@ -1,16 +1,16 @@
 import React from "react";
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
+import Navigation from '../components/navigation';
 
 export default (props) => {
     console.log(props);
     return (
-        <Layout>
-            <h3>Home</h3>
-            <Link to='/about'>Acerca de</Link>
+        <div>
+            <Navigation />
             <Img fluid={props.data.file.childImageSharp.fluid} alt='Imagen 7' />
-        </Layout>
+        </div>
     )
 }
 
